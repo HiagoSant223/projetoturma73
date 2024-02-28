@@ -10,7 +10,7 @@ public class AtividadeSwitch2 {
 		String colaborador;
 		int codigoCargo;
 		float salario;
-		double percentualReajuste;
+		float percentualReajuste;
 		String cargo;
 		
 		System.out.println("Nome do Colaborador: ");
@@ -22,29 +22,31 @@ public class AtividadeSwitch2 {
 		System.out.println("Salário: ");
 		salario = leia.nextFloat();
 		
+		leia.close();
+		
 		switch(codigoCargo) {
 		case 1: 
-			percentualReajuste = 0.10;
+			percentualReajuste = 0.10f;
 			cargo = "Gerente";
 			break;
 		case 2: 
-			percentualReajuste = 0.07;
+			percentualReajuste = 0.07f;
 			cargo = "Vendedor";
 			break;
 		case 3: 
-			percentualReajuste = 0.09;
+			percentualReajuste = 0.09f;
 			cargo = "Supervisor";
 			break;
 		case 4: 
-			percentualReajuste = 0.06;
+			percentualReajuste = 0.06f;
 			cargo = "Motorista";
 			break;
 		case 5: 
-			percentualReajuste = 0.05;
+			percentualReajuste = 0.05f;
 			cargo = "Estoquista";
 			break;
 		case 6: 
-			percentualReajuste = 0.08;
+			percentualReajuste = 0.08f;
 			cargo = "Técnico de TI";
 			break;
 		default:
@@ -52,11 +54,11 @@ public class AtividadeSwitch2 {
 			return;
 		}
 		
-		double novoSalario = salario + (percentualReajuste * salario);
+		float novoSalario = salario + (percentualReajuste * salario);
 		
 		System.out.println("Nome do colaborador: " + colaborador);
 		System.out.println("Cargo: " + cargo);
-		System.out.printf("Sálario: %.2f", novoSalario );
+		System.out.printf("Sálario: R$ %.2f", novoSalario );
 
 	}
 
