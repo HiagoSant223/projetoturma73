@@ -20,7 +20,7 @@ public class AtividadeVetor {
 			numero = leia.nextInt();
 			
 		
-		 // For com: Indice começa em 0. Que recebe o tamanho do vetor. E soma++
+		 // For: Indice começa em 0. Que recebe o tamanho do vetor. E soma++
 		// If: Se o indice do Vetor for == numero --> Então Posicao recebe indice. Break
 			for(indice = 0; indice < vetor.length; indice++) {
 				if(vetor[indice] == numero) {
@@ -31,7 +31,7 @@ public class AtividadeVetor {
 			
 		// If: se posicao for difrente de -1; então print Numero e Posicao. 
 			
-			if(posicao != -1) {
+			if(posicao >= 0) {
 				System.out.println("O número " + numero + " está localizado na posição: " + posicao);
 	        } else {
 	            System.out.println("O número " + numero + " não foi encontrado!");
