@@ -48,7 +48,7 @@ public class AtividadeFila {
                         System.out.println("A fila está vazia.");
                     } else {
                         String clienteChamado = filaClientes.poll();
-                        System.out.println("Cliente chamado: " + clienteChamado);
+                        System.out.println("Cliente foi chamado!");
                     }
                     break;
                 case 0:
